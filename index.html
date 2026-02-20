@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="bg-[url('https://source.unsplash.com/1920x1080/?montanha')] bg-cover bg-center min-h-screen flex items-center justify-center dark:bg-gray-900">
+
+  <main class="flex items-center justify-center w-full">
+    <form class="flex flex-col items-center bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg w-80">
+      
+      <h1 class="text-2xl font-semibold text-gray-800 dark:text-white">Bem-vindo(a)</h1>
+      <h2 class="text-sm text-gray-500 dark:text-gray-300">Insira seus dados de acesso</h2>
+
+      <div class="flex flex-col w-full mt-4 space-y-3">
+        
+        <!-- Email -->
+        <label for="email" class="text-gray-700 dark:text-gray-200 font-semibold">E-mail</label>
+        <div class="relative">
+          <i class="bx bxs-user absolute left-2 top-2 text-gray-400"></i>
+          <input type="email" id="email" placeholder="Seu email:" autocomplete="off"
+            class="w-full pl-8 py-2 border border-gray-300 rounded focus:border-blue-500 focus:ring focus:ring-blue-200 text-sm dark:bg-gray-700 dark:text-white">
+        </div>
+
+        <!-- Senha -->
+        <label for="password" class="text-gray-700 dark:text-gray-200 font-semibold">Senha</label>
+        <div class="relative">
+          <i class="bx bxs-key absolute left-2 top-2 text-gray-400"></i>
+          <input type="password" id="password" placeholder="Sua senha:"
+            class="w-full pl-8 py-2 border border-gray-300 rounded focus:border-blue-500 focus:ring focus:ring-blue-200 text-sm dark:bg-gray-700 dark:text-white">
+        </div>
+
+        <!-- Esqueceu senha -->
+        <a href="#" class="text-blue-600 hover:text-blue-800 text-sm mt-2">Esqueceu a senha?</a>
+
+        <!-- Botão -->
+        <input type="submit" value="Login"
+          class="w-full rounded bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold py-2 cursor-pointer hover:from-blue-700 hover:to-blue-500">
+      </div>
+    </form>
+  </main>
+</body>
+</html>
